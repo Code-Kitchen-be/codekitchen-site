@@ -6,8 +6,8 @@
   --kitchen-blue: #1a5e63;
   --fresh-mint: #06d6a0;
   --warm-cream: #fff9f1;
-  --deep-charcoal: #2f2d2e; /* Fixed the double # */
-  --spice-red: #d81e5b; /* Fixed the double # */
+  --deep-charcoal: #2f2d2e;
+  --spice-red: #d81e5b;
 
   /* Font Families */
   --heading-font: 'Montserrat', sans-serif;
