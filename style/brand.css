@@ -1,0 +1,48 @@
+/* Brand Stylesheet - Main Variables */
+
+:root {
+  /* Color Variables */
+  --code-orange: #ff6b35;
+  --kitchen-blue: #1a5e63;
+  --fresh-mint: #06d6a0;
+  --warm-cream: #fff9f1;
+  --deep-charcoal: #2f2d2e; /* Fixed the double # */
+  --spice-red: #d81e5b; /* Fixed the double # */
+
+  /* Font Families */
+  --heading-font: 'Montserrat', sans-serif;
+  --body-font: 'Open Sans', sans-serif;
+  --code-font: 'Fira Code', monospace;
+  --accent-font: 'Roboto Condensed', sans-serif;
+
+  /* Font Size Variables (Optional) */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+
+  /* Spacing Variables (Optional) */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--deep-charcoal);
+  background-color: var(--warm-cream);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--kitchen-blue);
+}
