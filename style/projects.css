@@ -213,45 +213,55 @@
   color: var(--code-orange);
 }
 
-.more-projects {
-  display: flex;
-  justify-content: center;
-  margin-top: 3rem;
-}
-
-.sketchy-button {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background-color: var(--code-orange);
-  color: white;
-  font-family: var(--heading-font);
-  font-size: var(--text-base);
+/* Project link styles */
+.project-link {
+  color: var(--kitchen-blue);
   text-decoration: none;
-  border-radius: 4px;
   position: relative;
-  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: color 0.2s;
 }
 
-.sketchy-button::before {
+.project-link::after {
   content: '';
   position: absolute;
-  top: 0;
+  bottom: -3px;
   left: 0;
-  right: 0;
-  bottom: 0;
-  border: 2px solid var(--code-orange);
-  border-radius: 4px;
-  transform: rotate(-1deg) translate(2px, 2px);
-  opacity: 0.3;
+  width: 100%;
+  height: 2px;
+  background-color: var(--code-orange);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-out;
+  opacity: 0.8;
+}
+
+.project-link:hover {
+  color: var(--code-orange);
+}
+
+.project-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.placeholder-link {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   transition: transform 0.2s;
 }
 
-.sketchy-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.15);
+.placeholder-link:hover {
+  transform: scale(1.05);
 }
 
-.sketchy-button:hover::before {
-  transform: rotate(-1deg) translate(3px, 3px);
+.browser-mockup {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-image:hover .browser-mockup {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
